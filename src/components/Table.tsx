@@ -3,7 +3,7 @@ import TableFromComponent from 'react-bootstrap/Table'
 import DataTables from 'datatables.net-bs5'
 import * as pdfMake from 'pdfmake/build/pdfmake'
 import * as pdfFonts from 'pdfmake/build/vfs_fonts'
-(<any>pdfMake).vfs = pdfFonts.pdfMake.vfs
+(pdfMake as any).vfs = pdfFonts.pdfMake.vfs;
 import 'datatables.net-buttons-bs5'
 import 'datatables.net-buttons/js/buttons.colVis.mjs'
 import 'datatables.net-buttons/js/buttons.html5.mjs'
