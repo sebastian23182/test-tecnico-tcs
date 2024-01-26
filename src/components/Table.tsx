@@ -1,9 +1,9 @@
 import Swal from 'sweetalert2'
 import TableFromComponent from 'react-bootstrap/Table'
 import DataTables from 'datatables.net-bs5'
-import pdfMake from 'pdfmake/build/pdfmake'
-import pdfFonts from 'pdfmake/build/vfs_fonts'
-pdfMake.vfs = pdfFonts.pdfMake.vfs
+import pdfMake from "pdfmake/build/pdfmake"
+import * as pdfFonts from 'pdfmake/build/vfs_fonts'
+pdfMake.vfs = pdfFonts.pdfMake.vfs;
 import 'datatables.net-buttons-bs5'
 import 'datatables.net-buttons/js/buttons.colVis.mjs'
 import 'datatables.net-buttons/js/buttons.html5.mjs'
